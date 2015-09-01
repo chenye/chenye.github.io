@@ -4,11 +4,10 @@ subtitle: An ant colony system for general function optimization
 layout: default
 modal-id: 1
 date: 2015-08-31
-img: acs4fun.png
+img: acs4fun-thumbnail.png
 thumbnail: acs4fun-thumbnail.png
 alt: image-alt
 project-date: Jan 2003
-client: Start Bootstrap
 category: Optimization algorithm
 description: This is an optimization algorithm for general functions. It was first developed in 2003.
 

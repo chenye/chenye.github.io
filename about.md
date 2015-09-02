@@ -4,8 +4,11 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+This is a website that blends a blog and a portfolio. It will contain contents related to multi-agent simulation, artificial intelligence, as well as many other interesting topics in computer science and engineering.
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+About Me
+I am a Quantitative Researcher at the Climate Corporation. My research interests include machine learning, data mining and optimization algorithms. You can find my publications in my [Google Scholar profile](https://scholar.google.com/citations?user=kHeI720AAAAJ&hl=en) or [LinkedIn](https://www.linkedin.com/pub/ye-chen/56/9b8/606).
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+Besides research, I like programming a lot during the past 10+ years. I programmed using Basic/Visual Basic, Pascal/Delphi, C/C++, assembly language (for both x86 and MCU), VHDL, Verilog, Matlab, and most recently, R. However, I am not an expert in any of them :(.
+
+

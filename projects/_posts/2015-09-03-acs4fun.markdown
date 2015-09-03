@@ -1,0 +1,22 @@
+---
+layout: post
+title:  "ACS4Fun: An Ant Colony System for General Function Optimization"
+date:   2015-09-03 00:00:01
+categories: ant colony optimization
+---
+This is a C++ code that was developed to find the solution(s) that minimize any given general function of real variables. It was first developed in 2003 and a related paper was published in 2004 (in Chinese). Although it is an old code and the performance of the algorithm is not as good as the state-of-the-art algorithms, it could still be used by people with a non-optimization background to solve many function optimization problems.
+
+The `main.cpp` contains a simple example to use the code.
+
+{% highlight C++ %}
+CACS4Fun \*acs;
+acs = new CACS4Fun();
+acs-\>alpha = 0.8;
+#=> define
+{% endhighlight %}
+
+Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
+
+[jekyll]:      http://jekyllrb.com
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-help]: https://github.com/jekyll/jekyll-help

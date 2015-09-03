@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "ACOR in C++: A C++ Implementation of the Ant Colony Optimization for Real Parameters"
+date:   2015-09-03 00:00:02
+categories: ant colony optimization
+---
+ACOR is an ant colony optimization for continuous domain functions. It was proposed by K. Socha in 2008. And an implement in `R` is available. I re-implemented ACOR in C++ in order to optimize the parameters for a graphical model called fuzzy cognitive maps. The ACOR part is extracted form the that project and uploaded to the acor-cpp GitHub repo, in order to make it accessible to more users of different backgrounds.
+
+Project in progress...
+

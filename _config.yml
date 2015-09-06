@@ -1,0 +1,58 @@
+# Site wide configuration
+
+title: SugarScape
+locale: en_US
+description: A space for simulation, evoluation and intelligence.
+logo: site-logo.png
+# url: //chenye.github.io/so-simple-theme
+# url: localhost:4000
+url: //www.sugarscape.net/so-simple-theme
+
+# Jekyll configuration
+
+permalink:   /:categories/:title/
+markdown:    kramdown
+highlighter: pygments
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..2
+  use_coderay: false
+
+mathjax: true
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "vendor"]
+
+comments: true
+
+# Site owner
+owner:
+  name: Ye Chen
+  avatar: ye-chen-avatar.jpg
+  email: chenye84@gmail.com
+  disqus-shortname: chenye
+  twitter:
+  facebook:
+  github: chenye
+  stackexchange:
+  linkedin:
+  instagram:
+  flickr:
+  tumblr:
+  pinterest:
+  weibo:
+  google:
+    plus:
+    analytics:
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:

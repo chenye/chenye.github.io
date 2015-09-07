@@ -36,15 +36,15 @@ In the first step, we start with the simplest task. Let"'"s rename the *articles
 
 ..* To enumerate the posts in the new category name, we need to modify a `for` loop code in index.md. In the original file, there is a line
 
-'''
+{% raw %}
 {% for post in site.categories.articles %}.
-'''
+{% endraw %}
 
 It loops through all posts in the articles category and show their titles and post dates in the articles page. Now we need to change it to
 
-'''
+{% raw %}
 {% for post in site.categories.projects %},
-'''
+{% endraw %}
 
 so that the for loop will list projects instead of articles.
 
@@ -53,15 +53,18 @@ so that the for loop will list projects instead of articles.
 * Edit the posts (i.e. the .md files). Change the "categories" from "articles" to "projects";
 
 * Edit navigation bar as defined in _data/navigation.yml. Find the following lines
-'''
+
+{% raw %}
 title: Articles
 url: /articles/
-'''
+{% endraw %}
+
 and replace articles with projects as follows
-'''
+
+{% raw %}
 title: Projects
 url: /projects/
-'''
+{% endraw %}
 
 OK. We can re-build the website now. We will see "PROJECTS" instead of "ARTICLES" in the navigation bar. Clicking it will direct us to a list of projects with title "Projects" shown in the center.
 
@@ -75,10 +78,10 @@ The steps are almost the same as modifying the existing categories. Let"'"s say 
 
 * Finally, add an entry in the navigation bar by modiying the file `_data/navigation.yml`:
 
-'''
+{% raw %}
 title: Publications
 url: /publications/
-'''
+{% endraw %}
 
 After these three major steps, we will see a working publication list. :D
 

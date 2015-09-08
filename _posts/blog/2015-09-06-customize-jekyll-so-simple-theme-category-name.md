@@ -26,7 +26,7 @@ The category names are shown in the navigation bar, the url, the title of the in
 
 # What exactly did I do?
 
-In the first step, we start with the simplest task. Let''s rename the *articles* in the original theme to *projects*. To do this, we need to:
+In the first step, we start with the simplest task. Let's rename the *articles* in the original theme to *projects*. To do this, we need to:
 
 * Rename the directory for the index page from "/articles" to "/projects";
 
@@ -36,15 +36,15 @@ In the first step, we start with the simplest task. Let''s rename the *articles*
 
   * To enumerate the posts in the new category name, we need to modify a `for` loop code in index.md. In the original file, there is a line like this:
 
-{% highlight html %}
-{% for post in site.categories.articles %}.
-{% endhighlight %}
+{% raw %}
+{% for post in site.categories.articles %}
+{% endraw %}
 
 It loops through all posts in the articles category and show their titles and post dates in the articles index page. Now we need to change it to
 
-{% highlight html %}
-{% for post in site.categories.projects %},
-{% endhighlight %}
+{% raw %}
+{% for post in site.categories.projects %}
+{% endraw %}
 
 so that the for loop will list projects instead of articles.
 
@@ -54,10 +54,10 @@ so that the for loop will list projects instead of articles.
 
 * Edit navigation bar as defined in _data/navigation.yml. Find the following lines
 
-{% highlight html %}
+{% raw %}
 title: Articles
 url: /articles/
-{% endhighlight %}
+{% endraw %}
 
 and replace articles with projects as follows
 
@@ -68,7 +68,7 @@ url: /projects/
 
 OK. We can re-build the website now. We will see "PROJECTS" instead of "ARTICLES" in the navigation bar. Clicking it will direct us to a list of projects with title "Projects" shown in the center.
 
-Now, let"'"s try adding a new category.
+Now, let's try adding a new category.
 
 The steps are almost the same as modifying the existing categories. Let"'"s say we want to add a new category called publications. The necessary steps are listed in the following.
 
@@ -77,10 +77,12 @@ The steps are almost the same as modifying the existing categories. Let"'"s say 
 * Create a directory `_post/publications` to store the posts in the publication category. We may then create some `.md` files or just copy some posts from the other categories and then modify their content. Make sure the `category` in the `.md` files are set to the new category name `publications`.
 
 * Finally, add an entry in the navigation bar by modiying the file `_data/navigation.yml`:
-{% highlight html %}
+
+{% raw %}
 title: Publications
 url: /publications/
-{% endhighlight %}
+{% endraw %}
+
 After these three major steps, we will see a working publication list. :D
 
 There is one last thing I want to mention. There is no sub-category for the posts. Each post is characterized by a number of tags. A list of posts with each tag can be found in the directory `/tags`. You can add a link to this directory in the navigation bar. In this way, we will have a page allowing visitors to easily browse all the tags and the associated posts.

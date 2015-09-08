@@ -16,51 +16,44 @@ It took me some time searching for my favoriate Jekyll theme for this website. I
 
 The goal is to build a website, which contains a blog, a project list, and a publication list.
 
-# What do we have in the intial so-simple-theme website?
+# What do we have initially?
 
-There is a blog and a list of articles.
+After clone the repo from so-simple-theme, there will be a blog and a list of articles (plus many other things that we will not explore in this post).
 
 # How to customize the category names?
 
-The category names are shown in the navigation bar, the url, the title of the pages
+The category names are shown in the navigation bar, the url, the title of the index pages. They are also used as the names for the directories that store the index page, and the posts for each category. Finally, category names are used to label each post in the corresponding post markdown file (`.md`). To add or modify a category name, we need to make sure all the places mentioned above are updated correctly.
 
-# What did I do?
+# What exactly did I do?
 
-In the first step, we start with the simplest task. Let"'"s rename the *articles* in the original theme to *projects*. To do this, we need to:
+In the first step, we start with the simplest task. Let''s rename the *articles* in the original theme to *projects*. To do this, we need to:
 
-* Rename the directory from "articles" to "projects";
+* Rename the directory for the index page from "/articles" to "/projects";
 
-* Edit the index.md file in the projects directory (originally the articles directory). This file defines how the web page appears for the category "projects". We need to (1) modify the title, which will be shown in the center of the page, and (2) the code to enumerate the posts in the category.
+* Edit the index.md file in the `/projects` directory (originally the `/articles` directory). This file defines how the index page appears for the category "projects". We need to (1) modify the title, which will be shown in the center of the index page, and (2) the code that enumerates the posts in the category.
 
-..* To change the title, we need to locate the `title: Articles` in the index.md file and then replace it by `title: Projects` or any other title of your choice.
+  * To change the title, we need to locate the `title: Articles` in the index.md file and then replace it with `title: Projects` or any other title of your choice.
 
-..* To enumerate the posts in the new category name, we need to modify a `for` loop code in index.md. In the original file, there is a line
-
-{% raw %}
+  * To enumerate the posts in the new category name, we need to modify a `for` loop code in index.md. In the original file, there is a line like this:
+{% highlight html %}
 {% for post in site.categories.articles %}.
-{% endraw %}
-
-It loops through all posts in the articles category and show their titles and post dates in the articles page. Now we need to change it to
-
-{% raw %}
+{% endhighlight %}
+It loops through all posts in the articles category and show their titles and post dates in the articles index page. Now we need to change it to
+{% highlight html %}
 {% for post in site.categories.projects %},
-{% endraw %}
-
+{% endhighlight %}
 so that the for loop will list projects instead of articles.
 
-* Rename the directory _post/articles to _post/projects. This directory contains all the posts for the article/project category;
+* Rename the directory `_post/articles` to `_post/projects`. This directory contains all the posts for the article/project category;
 
 * Edit the posts (i.e. the .md files). Change the "categories" from "articles" to "projects";
 
 * Edit navigation bar as defined in _data/navigation.yml. Find the following lines
-
-{% raw %}
+{% highlight html %}
 title: Articles
 url: /articles/
-{% endraw %}
-
+{% endhighlight %}
 and replace articles with projects as follows
-
 {% raw %}
 title: Projects
 url: /projects/
@@ -77,15 +70,11 @@ The steps are almost the same as modifying the existing categories. Let"'"s say 
 * Create a directory `_post/publications` to store the posts in the publication category. We may then create some `.md` files or just copy some posts from the other categories and then modify their content. Make sure the `category` in the `.md` files are set to the new category name `publications`.
 
 * Finally, add an entry in the navigation bar by modiying the file `_data/navigation.yml`:
-
-{% raw %}
+{% highlight html %}
 title: Publications
 url: /publications/
-{% endraw %}
-
+{% endhighlight %}
 After these three major steps, we will see a working publication list. :D
 
-Tip:
-
-There is a directory called `tags` in the root directory of the website. You can add a link to this directory in the navigation bar. In this way, we will have a page allowing visitors to easily browse all the tags and the associated posts.
+There is one last thing I want to mention. There is no sub-category for the posts. Each post is characterized by a number of tags. A list of posts with each tag can be found in the directory `/tags`. You can add a link to this directory in the navigation bar. In this way, we will have a page allowing visitors to easily browse all the tags and the associated posts.
 

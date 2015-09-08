@@ -35,13 +35,17 @@ In the first step, we start with the simplest task. Let''s rename the *articles*
   * To change the title, we need to locate the `title: Articles` in the index.md file and then replace it with `title: Projects` or any other title of your choice.
 
   * To enumerate the posts in the new category name, we need to modify a `for` loop code in index.md. In the original file, there is a line like this:
+
 {% highlight html %}
 {% for post in site.categories.articles %}.
 {% endhighlight %}
+
 It loops through all posts in the articles category and show their titles and post dates in the articles index page. Now we need to change it to
+
 {% highlight html %}
 {% for post in site.categories.projects %},
 {% endhighlight %}
+
 so that the for loop will list projects instead of articles.
 
 * Rename the directory `_post/articles` to `_post/projects`. This directory contains all the posts for the article/project category;
@@ -49,11 +53,14 @@ so that the for loop will list projects instead of articles.
 * Edit the posts (i.e. the .md files). Change the "categories" from "articles" to "projects";
 
 * Edit navigation bar as defined in _data/navigation.yml. Find the following lines
+
 {% highlight html %}
 title: Articles
 url: /articles/
 {% endhighlight %}
+
 and replace articles with projects as follows
+
 {% raw %}
 title: Projects
 url: /projects/

@@ -11,3 +11,4 @@ share: true
 
 This is a paper written in Chinese and it was published in 2000.
 
+<a href="www.sugarscape.net/downloads/2000-middle-school-geometry-chinese.pdf">Paper<a/>

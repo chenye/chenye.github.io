@@ -11,6 +11,10 @@ image:
 
 This is a website that blends a blog and a portfolio. It will contain contents related to multi-agent simulation, artificial intelligence, as well as many other interesting topics in computer science and engineering.
 
+# What Is SugarScape
+
+SugarScape is an interesting model developed by Joshua M. Epstein and Robert Axtell. It simulates the dynamics of multiple agents interacting with each other in a space with limited resource (sugar). The simulation of the interactions between the agents and the evolution of the individual agents are the main componenets in SugarScape and other similar systems. Many algorithms in artificial intelligence also have the simulation and evolution features.
+
 # About Me
 
 I am a Quantitative Researcher at the Climate Corporation. My research interests include machine learning, data mining and optimization algorithms. You can find my publications in my [Google Scholar profile](https://scholar.google.com/citations?user=kHeI720AAAAJ&hl=en) or [LinkedIn](https://www.linkedin.com/pub/ye-chen/56/9b8/606).

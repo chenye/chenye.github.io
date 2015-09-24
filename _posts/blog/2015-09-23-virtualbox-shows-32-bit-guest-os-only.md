@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "VirtualBox Shows 32-bit Guest Operating Systems Only in 64-bit Windows 10"
+title: "VirtualBox Only Shows 32-bit Guest Operating Systems Options in 64-bit Windows 10"
 modified:
 categories: blog
 excerpt: "The solution to this problem is simple. Just re-run the setup program and choose 'repair'. You don't even need to restart your computer."

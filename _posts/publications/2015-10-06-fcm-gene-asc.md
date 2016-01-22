@@ -13,4 +13,4 @@ The paper was published in Dec., 2015 in Applied Soft Computing.
 
 <a href="http://www.sugarscape.net/downloads/2015-fcm-gene-asc.pdf">PDF Download<a/>
 
-Code and data are uploaded to the github repository named <a href="https://github.com/chenye/fcm">fcm<a/>. 
+Code and data are uploaded to <a href="https://github.com/chenye/fcm">a repository named fcm in my github<a/>. 

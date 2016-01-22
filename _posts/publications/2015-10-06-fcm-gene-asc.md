@@ -9,6 +9,7 @@ comments: true
 share: true
 ---
 
-The paper will be published in Dec., 2015 in Applied Soft Computing. I will also upload the data and code to github later when I get a chance. 
+The paper was published in Dec., 2015 in Applied Soft Computing.
 
 <a href="http://www.sugarscape.net/downloads/2015-fcm-gene-asc.pdf">PDF Download<a/>
+Code and data are uploaded to the github repository named <a href="https://github.com/chenye/fcm">fcm<a/>. 

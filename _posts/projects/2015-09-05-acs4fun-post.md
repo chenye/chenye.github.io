@@ -17,7 +17,7 @@ The `main.cpp` contains a simple example to use the class `CAcs4Fun` to find the
 
 This function is defined in the function `evaluate()` as the default objective function. We can modify the definition to reflect the actual function we want to optimize (Or in a more C++ way, define `evaluate()` as a virtual function and then override it). However, in 
 
-~~~ C++
+~~~ cpp
 CACS4Fun *acs;
 acs = new CACS4Fun();
 acs->alpha = 0.8;

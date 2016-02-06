@@ -16,10 +16,11 @@ The `main.cpp` contains a simple example to use the class `CAcs4Fun` to find the
 \[y = sum{(x_i-0.5)^2}\]
 
 This function is defined in the function `evaluate()` as the default objective function. We can modify the definition to reflect the actual function we want to optimize (Or in a more C++ way, define `evaluate()` as a virtual function and then override it). However, in 
-{% highlight C++ %}
-CACS4Fun \*acs;
+
+~~~ C++
+CACS4Fun *acs;
 acs = new CACS4Fun();
-acs-\>alpha = 0.8;
+acs->alpha = 0.8;
 #=> define
-{% endhighlight %}
+~~~
 

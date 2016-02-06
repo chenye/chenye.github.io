@@ -41,7 +41,7 @@ r <- foreach(i = 1:5, .combine = "c") %do% {
 
 Here is the output:
 
-{% highlight R %} 
+{% highlight r %} 
 > r
 [1] -0.6264538  0.1836433 -0.8356286  1.5952808  0.3295078
 {% endhighlight %} 
@@ -50,7 +50,7 @@ It is exactly the same as the output from the first piece of code that use the p
 
 Finally, we try the third way, i.e., using random numbers in a parallel foreach loop. Here we use doMC package to register parallel backend. The code is shown in the following.
 
-{% highlight R %} 
+{% highlight r %} 
 library(foreach)
 library(doMC)
 
@@ -63,14 +63,14 @@ r <- foreach(i = 1:5, .combine = "c") %dopar% {
 
 Here is the output:
 
-{% highlight R %} 
+{% highlight r %} 
 > r
 [1] -0.1624277  0.4536430  0.3282893 -0.7025522  0.6008962
 {% endhighlight %} 
 
 If re-run the code again and print the output, the results will be different. Here is an example output after re-run the whole code including "set.seed(1)" to set the random seed.
 
-{ highlight R %}
+{% highlight R %}
 > r
 [1] -0.77484781  0.09627244 -0.79425302  1.08190738  0.24735862
 {% endhighlight %}

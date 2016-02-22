@@ -7,7 +7,7 @@ search_omit: true
 
 
 <div class="toc">
-  <h2>Sample texts</h2>
+  <h2>List of publications</h2>
     <ul class="post">
       {% for item in site.categories.publications do %}
         

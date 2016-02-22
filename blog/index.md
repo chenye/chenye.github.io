@@ -7,7 +7,7 @@ search_omit: true
 
 
 <div class="toc">
-  <h2>Sample texts</h2>
+
     <ul class="post">
       {% for item in site.categories.blog do %}
         

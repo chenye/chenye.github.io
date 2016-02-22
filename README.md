@@ -1,30 +1,35 @@
-# So Simple Theme
+# Ed: A Jekyll Theme for Minimal Editions
 
-Looking for a simple, responsive, theme for your Jekyll powered blog? Well look no further. Here be **So Simple Theme**, the followup to [**Minimal Mistakes**](http://mmistakes.github.io/minimal-mistakes/) -- by designer slash illustrator [Michael Rose](http://mademistakes.com).
+![Sample Ed screenshot](https://github.com/elotroalex/ed/blob/master/assets/screenshot.png)
 
-[![Build Status](https://travis-ci.org/mmistakes/so-simple-theme.svg?branch=master)](https://travis-ci.org/mmistakes/so-simple-theme)
+## Introduction
 
-## So Simple Theme is all about:
+One of our most pressing and ever revolving needs as scholars is to pass on our textual artifacts from one generation to another. The art of textual editing, among other practices, has helped many cultures to remember and interpret for centuries. Alas, that art is practiced and encouraged in its highest form by a dwindling number of scholars. In a digital environment the problem is compounded by the difficulties of the medium. While vast repositories, and "e-publications" appear on the online scene yearly, very few manifest a textual scholar's disciplined attention to detail. In contrast, most textual scholars who have made the leap to a rigorous digital practice have focused on markup, relying on technical teams to deploy and maintain their work. This makes your average scholarly digital edition a very costly, and therefore limited affair. We hope that Ed can help would-be and veteran textual scholars make it easier to deploy their own editions in a lasting way.
 
-* Responsive templates. Looking good on mobile, tablet, and desktop.
-* Gracefully degrading in older browsers. Compatible with Internet Explorer 9+ and all modern browsers.
-* Minimal embellishments and subtle animations.
-* Optional large feature images for posts and pages.
-* [Custom 404 page](http://mmistakes.github.io/so-simple-theme/404.html) to get you started.
-* Basic [search capabilities](https://github.com/mathaywarduk/jekyll-search)
-* Support for Disqus Comments
+Ed is a [Jekyll](https://jekyllrb.com/
+) theme designed for textual editors based on [minimal computing principles](http://go-dh.github.io/mincomp/), and focused on legibility, ease and flexibility. In other words, the technology is easier to learn or teach and can produce beautifully rendered scholarly or reading editions of texts. The resulting edition consists of static pages whose rate of decay is substantially lower than database-driven systems. As an added bonus, these static pages require less bandwith.
 
-![screenshot of So Simple Theme](http://mmistakes.github.io/so-simple-theme/images/so-simple-theme-preview.jpg)
+Ed is built on top of [Lanyon](https://github.com/poole/lanyon), a Jekyll theme based on [Poole](http://getpoole.com), "the Jekyll butler," both created by [Mark Otto](<https://github.com/mdo) and distributed with an MIT license. Thanks to Mark Otto for his helpful streamlining. 
 
-See a [live version of So Simple](http://mmistakes.github.io/so-simple-theme/) hosted on GitHub.
+## Sample Ed editions.
 
----
+- [Our sample site](http://elotroalex.github.io/ed/) is the first edition built with Ed.
 
-## Getting Started
 
-So Simple takes advantage of Sass and data files to make customizing easier. These features require Jekyll 2.x and will not work with older versions of Jekyll.
 
-To learn how to install and use this theme check out the [Setup Guide](http://mmistakes.github.io/so-simple-theme/theme-setup/) for more information.
+## Current Features
+- Templates for narrative, drama and poetry
+- Responsive design for mobile phones, tablets and PCs.
+- Relatively easy to learn and teach
+- Works well in high- or low- bandwitdh scenarios
+- Easier for digital archives and libraries to preserve
+- Open source, open access
+- Unobtrusive footnotes
+- Works well with Zotero
+- Ability to generate well-formatted bibliographies and linked citations using [jekyll-scholar](https://github.com/inukshuk/jekyll-scholar) by [Sylvester Keil](https://github.com/inukshuk/)
+- Annotations via [hypothes.is](https://hypothes.is/)
+- Automatic table of content generation
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/mmistakes/so-simple-theme/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+## Installing and using Ed
 
+To learn how to install and begin using Ed, please visit our [documentation page](http://elotroalex.github.io/ed/documentation.html).

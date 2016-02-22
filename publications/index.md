@@ -1,12 +1,21 @@
 ---
 layout: page
 title: Publications
-excerpt: "An archive of publications."
+excerpt: "An archive of publications sorted by date."
 search_omit: true
 ---
 
-<ul class="post-list">
-{% for post in site.categories.publications %} 
-  <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt }}</span>{% endif %}</a></article></li>
-{% endfor %}
-</ul>
+
+<div class="toc">
+  <h2>Sample texts</h2>
+    <ul class="post">
+      {% for item in site.categories.publications do %}
+        
+            <li class="post-title">
+                  <a href="{{ site.baseurl }}{{ item.url }}">
+                          {{ item.title }}
+                  </a>
+            </li>
+      {% endfor %}
+    </ul>  
+</div>

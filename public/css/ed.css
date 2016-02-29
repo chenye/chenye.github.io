@@ -55,7 +55,7 @@ a, .post-title a {
 }
 
 li.post-title-list {
-  margin-bottom: 0.4rem;
+  margin-bottom: 1rem;
 }
 
 div.poem, div.narrative {
@@ -98,8 +98,10 @@ hr {
 	margin-top: 60px;
 }
 
-
-
+p.post-excerpt {
+    color: #818181;
+    margin-bottom: 0rem;
+}
 /* Masthead styles */
 
 .masthead {

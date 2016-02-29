@@ -1,0 +1,13 @@
+  
+    <li class="post-title-list">
+
+      <a href="{{ site.baseurl }}{{ item.url }}">
+        {{ item.title }}
+      </a>
+      
+      <p class = "post-excerpt">
+        {{ item.date | date_to_string }} - <i>{{ item.excerpt }} </i>
+      </p>
+    
+    </li>
+

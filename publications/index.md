@@ -11,7 +11,7 @@ search_omit: true
     <ul class="post">
       {% for item in site.categories.publications do %}
         
-            <li class="post-title">
+            <li class="post-title-list">
                   <a href="{{ site.baseurl }}{{ item.url }}">
                           {{ item.title }}
                   </a>

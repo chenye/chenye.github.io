@@ -54,12 +54,16 @@ a, .post-title a {
   text-decoration: none;
 }
 
+li.post-title-list {
+  margin-bottom: 0.4rem;
+}
+
 div.poem, div.narrative {
 	margin-bottom: 5rem;
 }
 
 div.toc {
-	margin-bottom: 4rem;
+	margin-bottom: 10rem;
 }
 
 ul {

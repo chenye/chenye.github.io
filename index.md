@@ -3,8 +3,8 @@ layout: default
 title: Home
 ---
 
-[Blog](blog)  --  Projects  --  Publications
-
+[Blog](blog)  --  [Projects](projects)  --  [Publications](publications)
+==========================
 <div class="toc">
   <h2>Recent posts</h2>
   <ul class="post">
